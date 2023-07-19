@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import MenuItem from '@material-ui/core/MenuItem';
-import StartIcon from '@material-ui/icons/PlayCircleOutline';
 import LayersIcon from '@material-ui/icons/Layers';
 
 const layersReducer = (state = {}, action) => {
