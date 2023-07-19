@@ -62,6 +62,7 @@
   ],
   "dependencies": {
     "@blueprintjs/core": "^5.1.1",
-    "@blueprintjs/icons": "^5.1.0"
+    "@blueprintjs/icons": "^5.1.0",
+    "@material-ui/styles": "^4.11.5"
   }
 }
