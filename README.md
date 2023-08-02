@@ -10,7 +10,7 @@
 
 <img src="assets/demo.gif" width="100%" title="Mirador layer slideshow example">
 
-**[Demo on https://nakamura196.github.io/mirador-layer-slideshow-plugin/][demo]**
+**Demo on https://nakamura196.github.io/mirador-layer-slideshow-plugin/**
 
 ## Configuration
 Several configuration options are available on windows that use mirador-layer-slideshow.
