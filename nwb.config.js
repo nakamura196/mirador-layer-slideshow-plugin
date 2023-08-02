@@ -5,9 +5,10 @@ module.exports = {
   npm: {
     esModules: true,
     umd: {
-      global: 'MiradorLayers',
+      global: 'MiradorLayerSlideshow',
       externals: {
         react: 'React',
+        'react-dom': 'ReactDom',
       },
     },
   },
