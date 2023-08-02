@@ -140,7 +140,15 @@ const mapStateToProps = (state, { windowId }) => {
   const { manifests, viewers, windows } = state;
   const canvasId = (windows[windowId] && windows[windowId].canvasId) || null;
   const zoom = (viewers[windowId] && viewers[windowId].zoom) || 0;
-  const layersObj = getLayers(manifests, canvasId);
+  let layersObj = getLayers(manifests, canvasId);
+
+  if (!layersObj) {
+    layersObj = {
+      layers: [],
+      canvasWidth: 0,
+      canvasHeight: 0,
+    };
+  }
 
   return {
     containerId: getContainerId(state),
@@ -148,7 +156,6 @@ const mapStateToProps = (state, { windowId }) => {
     open: state.layersDialog[windowId] && state.layersDialog[windowId].open,
     // getWindowConfig(state, { windowId }).imageToolsOpen || false,
     viewConfig: getViewer(state, { windowId }) || {},
-
     canvasWidth: layersObj.canvasWidth,
     canvasHeight: layersObj.canvasHeight,
     canvasId,
