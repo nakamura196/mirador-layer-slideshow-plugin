@@ -11,9 +11,7 @@ const translations = {
   ja: {
     collapse_open: 'レイヤーを畳む',
     collapse_close: 'レイヤースライドショーを開く',
-
     hide: 'レイヤースライドショーを隠す',
-
     show: 'レイヤースライドショーを表示',
     start: '開始',
     stop: '停止',
