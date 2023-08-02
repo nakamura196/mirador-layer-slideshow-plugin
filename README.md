@@ -6,7 +6,9 @@
 
 `mirador-layer-slideshow` is a [Mirador 3](https://github.com/projectmirador/mirador) plugin that adds layer slideshow.
 
-![Mirador layer slideshow example](assets/demo.gif)
+<!-- ![Mirador layer slideshow example](assets/demo.gif) -->
+
+<img src="assets/demo.gif" width="100%" title="Mirador layer slideshow example">
 
 ## Configuration
 Several configuration options are available on windows that use mirador-layer-slideshow.

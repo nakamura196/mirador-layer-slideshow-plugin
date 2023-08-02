@@ -142,8 +142,6 @@ const mapStateToProps = (state, { windowId }) => {
   const zoom = (viewers[windowId] && viewers[windowId].zoom) || 0;
   const layersObj = getLayers(manifests, canvasId);
 
-  console.log({ layersObj });
-
   return {
     containerId: getContainerId(state),
     enabled: getWindowConfig(state, { windowId }).layerSlideshowEnabled || false,
@@ -168,15 +166,6 @@ const mapStateToProps = (state, { windowId }) => {
 export default [
   {
     target: 'OpenSeadragonViewer',
-    /*
-    _mapDispatchToProps: {
-      updateWindow: actions.updateWindow,
-    },
-    mapDispatchToProps: (dispatch, { windowId }) => ({
-      updateWindow: actions.updateWindow,
-      ...mapDispatchToProps(dispatch, { windowId }),
-    }),
-    */
     mapDispatchToProps,
     mapStateToProps,
     mode: 'add',
