@@ -9,6 +9,8 @@ const config = {
   }],
 };
 
+console.log('miradorLayerSlideshowPlugin', miradorLayerSlideshowPlugin);
+
 Mirador.viewer(config, [
   ...miradorLayerSlideshowPlugin,
 ]);
