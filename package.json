@@ -1,60 +1,55 @@
 {
   "name": "mirador-layer-slideshow",
-  "version": "0.11.0",
-  "description": "mirador-layer-slideshow React component",
-  "main": "lib/index.js",
-  "module": "es/index.js",
+  "version": "1.0.0",
+  "description": "A Mirador 4 plugin that adds a layer slideshow to the OpenSeadragon viewer",
+  "type": "module",
+  "main": "./dist/mirador-layer-slideshow.es.js",
+  "module": "./src/index.jsx",
   "files": [
-    "css",
-    "es",
-    "lib",
-    "umd"
+    "dist",
+    "src"
   ],
-  "scripts": {
-    "build": "nwb build-react-component",
-    "clean": "nwb clean-module && nwb clean-demo",
-    "lint": "eslint ./src ./__tests__",
-    "prepublishOnly": "npm run build",
-    "start": "nwb serve-react-demo",
-    "test": "npm run lint && jest",
-    "test:coverage": "jest --coverage",
-    "test:watch": "jest --watch"
+  "exports": {
+    "./src": "./src/index.jsx",
+    ".": {
+      "import": "./dist/mirador-layer-slideshow.es.js"
+    }
   },
-  "dependencies": {
-    "@material-ui/styles": "^4.11.5"
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "build:demo": "vite build --config vite.demo.config.js"
   },
   "peerDependencies": {
-    "mirador": "^3.0.0-rc.4",
-    "react": "16.x",
-    "react-dom": "16.x"
+    "@mui/icons-material": "^7.0.0",
+    "@mui/material": "^7.0.0",
+    "mirador": "^4.0.0",
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0",
+    "react-i18next": "^13.0.0 || ^14.0.0 || ^15.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.2",
-    "@babel/preset-env": "^7.6.2",
-    "@babel/preset-react": "^7.0.0",
-    "babel-eslint": "^10.0.3",
-    "babel-jest": "^24.9.0",
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.14.0",
-    "eslint": "^6.1.0",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-plugin-babel": "^5.3.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^22.17.0",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.3",
-    "eslint-plugin-react-hooks": "^1.7.0",
-    "jest": "^24.9.0",
-    "mirador": "^3.0.0-rc.4",
-    "nwb": "0.23.x",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^7.0.0",
+    "@mui/material": "^7.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "mirador": "^4.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-i18next": "^15.0.0",
+    "vite": "^6.0.0"
   },
   "author": "",
-  "homepage": "",
+  "homepage": "https://github.com/nakamura196/mirador-layer-slideshow-plugin",
   "license": "Apache-2.0",
-  "repository": "",
+  "repository": "github:nakamura196/mirador-layer-slideshow-plugin",
   "keywords": [
-    "react-component"
+    "mirador",
+    "iiif",
+    "plugin",
+    "layer",
+    "slideshow"
   ]
 }
