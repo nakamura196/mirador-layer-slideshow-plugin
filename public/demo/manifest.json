@@ -3,13 +3,13 @@
   "@id": "https://nakamura196.github.io/mirador-layer-slideshow-plugin/demo/manifest.json",
   "@type": "sc:Manifest",
   "label": "泰平丸起絵図",
-  "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/files/medium/bc0f0b7eae39dc7b697ffe7a3bbd8e17dc40db8e.jpg",
+  "thumbnail": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/kaishi/HDD1/TIFF/7-2-24/7-2-24_last.tif/full/!200,200/0/default.jpg",
   "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
   "attribution": "東京大学駒場図書館 Komaba Library, The University of Tokyo, JAPAN",
   "logo": "https://iiif.dl.itc.u-tokyo.ac.jp/images/ut-logo.jpg",
-  "related": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/kaishi/document/bb17d219-7893-398b-73f2-0e871f1b23c5",
-  "seeAlso": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/api/items/445474",
-  "within": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/kaishi",
+  "related": "https://da.dl.itc.u-tokyo.ac.jp/portal/assets/bb17d219-7893-398b-73f2-0e871f1b23c5",
+  "seeAlso": "https://da.dl.itc.u-tokyo.ac.jp/portal/assets/bb17d219-7893-398b-73f2-0e871f1b23c5?_format=json",
+  "within": "https://da.dl.itc.u-tokyo.ac.jp/portal/collection/kaishi",
   "metadata": [
     {
       "label": "タイトル/Title",
@@ -57,7 +57,7 @@
     },
     {
       "label": "Manifest Uri",
-      "value": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/bb17d219-7893-398b-73f2-0e871f1b23c5/manifest"
+      "value": "https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/bb17d219-7893-398b-73f2-0e871f1b23c5/manifest"
     },
     {
       "label": "attributionLabel",
